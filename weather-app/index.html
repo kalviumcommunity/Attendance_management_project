@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Checker</title>
+    <!-- Links the external stylesheet for design -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Checker</h1>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Check Weather</button>
+      </div>
+      <div id="weatherInfo" class="weather-info">
+        <!-- Weather info will be injected here -->
+        <p>Enter a city to check the weather.</p>
+      </div>
+    </div>
+    <!-- Links the external JavaScript file for functionality -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
