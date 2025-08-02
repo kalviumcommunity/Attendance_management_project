@@ -3,29 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>My E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Rock Paper Scissors</h1>
-      <div id="scoreboard">
-        <p>Player: <span id="player-score">0</span></p>
-        <p>Computer: <span id="computer-score">0</span></p>
-        <p>Round: <span id="round-count">0</span>/5</p>
-      </div>
+    <header>
+      <h1>ShopSmart</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
 
-      <div id="choices">
-        <button data-choice="rock">🪨 Rock</button>
-        <button data-choice="paper">📄 Paper</button>
-        <button data-choice="scissors">✂️ Scissors</button>
-      </div>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Big Summer Sale!</h2>
+          <p>Up to 50% off on selected items</p>
+          <button>Shop Now</button>
+        </div>
+      </section>
 
-      <div id="result-message"></div>
-      <div id="final-message"></div>
-      <button id="play-again" style="display: none">Play Again</button>
-    </div>
+      <section class="products">
+        <div class="product-card">
+          <img
+            src="https://th.bing.com/th/id/OIP.X3jDS9J58Q4ilo4vgjh-RAHaE5?w=292&h=192&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"
+            alt="Product 1"
+          />
+          <h3>Product 1</h3>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://th.bing.com/th/id/OIP.X3jDS9J58Q4ilo4vgjh-RAHaE5?w=292&h=192&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"
+            alt="Product 2"
+          />
+          <h3>Product 2</h3>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://th.bing.com/th/id/OIP.X3jDS9J58Q4ilo4vgjh-RAHaE5?w=292&h=192&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"
+            alt="Product 3"
+          />
+          <h3>Product 3</h3>
+          <p>$39.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <p>© 2025 ShopSmart Inc.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
