@@ -81,4 +81,5 @@ function resetGame() {
   resultMessage.textContent = "";
   finalMessage.textContent = "";
   playAgainBtn.style.display = "none";
+  
 }
