@@ -1,22 +1,48 @@
-# Tic-Tac-Toe – Final Polish
+# 🎮 Tic Tac Toe – React Polished Version
 
-## ✅ Improvements Done
+A simple, responsive, and interactive 2-player **Tic Tac Toe game** built with **React** and **Vite**, styled using **CSS**. The game supports real-time turn switching, win/draw detection, and a restart option — all wrapped in a clean and user-friendly interface.
 
-- Fixed post-win interaction bug
-- Added hover effects and smooth transitions
-- Cleaned up UI layout and spacing
-- Responsive design for mobile screens
-- Clear feedback messages (Winner / Draw / Turn)
-- Accessible with aria-labels and contrast-friendly colors
+---
 
-## 🚀 How to Run
+## 🚀 Features
 
-1. Clone the repo
-2. Run `npm install`
-3. Run `npm run dev` (for Vite) or `npm start` (for CRA)
+- ✅ 2-Player turn-based gameplay
+- ✅ Win and draw detection logic
+- ✅ Restart game functionality
+- ✅ Responsive layout (mobile + desktop)
+- ✅ Clean UI with polished styling
+- ✅ Built with React functional components and hooks
 
-## 🧩 Tech Stack
+---
 
-- React
-- CSS
-- Vite or Create React App
+## 🛠️ Technologies Used
+
+- **React.js** – UI & component logic
+- **Vite** – Lightning-fast development server
+- **JavaScript (ES6)** – Core language
+- **CSS3** – Styling and layout
+- **HTML5** – Markup
+
+---
+
+## 📦 Installation & Usage
+
+### Prerequisites:
+
+- Node.js and npm installed
+
+### Steps to run locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/kalviumcommunity/Attendance_management_project.git
+
+# Navigate into the project directory
+cd tic-tac-toe-react
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
