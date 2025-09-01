@@ -1,11 +1,10 @@
 package com.school;
 
-public class AttendanceRecord {
+public class AttendanceRecord implements Storable {
     private int studentId;
     private int courseId;
     private String status;
 
-    // Constructor with validation
     public AttendanceRecord(int studentId, int courseId, String status) {
         this.studentId = studentId;
         this.courseId = courseId;
@@ -18,7 +17,6 @@ public class AttendanceRecord {
         }
     }
 
-    // Getters
     public int getStudentId() {
         return studentId;
     }
@@ -31,8 +29,12 @@ public class AttendanceRecord {
         return status;
     }
 
-    // Display record
     public void displayRecord() {
         System.out.println("StudentID: " + studentId + ", CourseID: " + courseId + ", Status: " + status);
+    }
+
+    @Override
+    public String toDataString() {
+        return studentId + "," + courseId + "," + status;
     }
 }
