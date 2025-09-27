@@ -1,0 +1,11 @@
+# my-app/.dockerignore
+node_modules
+.git
+.gitignore
+.env
+.env.* # To ignore all .env files
+Dockerfile
+Dockerfile.dev
+*.log
+npm-debug.log
+README.md

@@ -1,0 +1,24 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  my-app:
+    image: yourdockerhubusername/my-app:v1.0.0 # IMPORTANT: Replace with your Docker Hub username and exact image tag
+    container_name: my-app-production
+    env_file:
+      - ./my-app/.env.production # Points to your production .env file
+    ports:
+      - "80:3000" # Map host port 80 to container port 3000
+    restart: unless-stopped # Ensures the container restarts automatically unless explicitly stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s # Give the app some time to start before checking
+    # Optional: If your app needs persistent data (e.g., for a database, logs)
+    # volumes:
+    #   - app-data:/app/data # Example named volume. Ensure /app/data is writable by 'appuser' if used.
+# Optional: Define named volumes if used
+# volumes:
+#   app-data:
